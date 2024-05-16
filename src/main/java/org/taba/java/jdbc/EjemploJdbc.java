@@ -10,22 +10,22 @@ public class EjemploJdbc {
         // Cargar las variables de entorno
         Dotenv dotenv = Dotenv.load();
 
-        String url = "jdbc:mysql://localhost:3306/" + dotenv.get("DB_NAME");
+        String url = "jdbc:mysql://localhost:3306/" + dotenv.get("DB_NAME") + "?serverTimezone=UTC";
         String user = dotenv.get("DB_USER");
         String password = dotenv.get("DB_PASSWORD");
-        try {
-            Connection conn = DriverManager.getConnection(url, user, password);
-            Statement stmt = conn.createStatement();
-            // Devuelve un cursor con todos los registros de la tabla
-            ResultSet resultado = stmt.executeQuery("SELECT * FROM productos");
+
+        try (Connection conn = DriverManager.getConnection(url, user, password);
+             Statement stmt = conn.createStatement();
+             ResultSet resultado = stmt.executeQuery("SELECT * FROM productos")) {
+
             while (resultado.next()) {
-                System.out.println("ID: " + resultado.getInt("id") + " Nombre: " + resultado.getString("nombre"));
+                System.out.print("ID: " + resultado.getInt("id") + " Nombre: " + resultado.getString("nombre"));
+                System.out.print(" | Precio: " + resultado.getDouble("precio"));
+                System.out.println(" | Fecha: " + resultado.getDate("fecha_registro"));
             }
-            resultado.close();
-            stmt.close();
-            conn.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }
