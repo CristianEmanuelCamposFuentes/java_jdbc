@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-Z
-*src/main/java/org/taba/java/jdbc/Main.java,f\e\fe3601dea90957569b1b3e303c4290a90e4d919e
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -14,3 +12,9 @@ a
 .env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 <
 .env.example,d\4\d4dae00d11854b35292c2b8a30515a9a0aa2d871
+l
+<src/main/java/org/taba/java/jdbc/util/ConexionBaseDatos.java,9\a\9a13ec35c52b00a77493e84ccf186c534fc60dcc
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
