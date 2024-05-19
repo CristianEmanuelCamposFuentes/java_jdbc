@@ -18,3 +18,9 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+e
+5src/main/java/org/taba/java/jdbc/models/Producto.java,5\c\5c442609730718f87afa9f7d5d2dafd2154727a7
+l
+<src/main/java/org/taba/java/jdbc/repository/Repositorio.java,9\0\908f9ab314704c6619496cbcc0312ac0411ac759
+x
+Hsrc/main/java/org/taba/java/jdbc/repository/ProductoRepositorioImpl.java,5\f\5fc3bf644e0626ed066b1dffb5f4f1f7cb460933
